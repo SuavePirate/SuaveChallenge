@@ -17,14 +17,8 @@ namespace CoolBreeze
 
         protected override void OnAppearing()
         {
-            if (App.ViewModel == null) App.ViewModel = new MainViewModel();
-
             this.BindingContext = App.ViewModel;
-
             if (App.ViewModel.NeedsRefresh) App.ViewModel.RefreshCurrentConditionsAsync();
-
-            if (cityPicker.SelectedIndex < 0) cityPicker.SelectedIndex = 0;
-
             base.OnAppearing();
         }
 

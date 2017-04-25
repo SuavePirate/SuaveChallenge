@@ -47,5 +47,7 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Please allow CoolBreeze to use your location.</string>
 </dict>
 </plist>
