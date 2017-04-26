@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 using Xamarin.Forms;
+using Device = Xamarin.Forms.Device;
 
 namespace CoolBreeze
 {
@@ -20,7 +23,9 @@ namespace CoolBreeze
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            // Mobile center isn't registered for UWP, so don't start it on UWP.
+            if (Device.RuntimePlatform != Device.Windows)
+                MobileCenter.Start(typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()

@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using Microsoft.Azure.Mobile;
 
 namespace CoolBreeze.iOS
 {
@@ -25,6 +26,7 @@ namespace CoolBreeze.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
+            MobileCenter.Configure("bf580b35-7828-4d85-a007-b4eef19a52e4");
             return base.FinishedLaunching(app, options);
         }
     }

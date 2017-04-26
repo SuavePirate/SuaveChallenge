@@ -1,6 +1,10 @@
 ﻿{
   "dependencies": {
+    "Microsoft.Azure.Mobile": "0.8.1",
+    "Microsoft.Azure.Mobile.Analytics": "0.8.1",
+    "Microsoft.Azure.Mobile.Crashes": "0.8.1",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+    "WindowsAzure.Storage": "8.1.1",
     "Xam.Plugin.Geolocator": "3.0.4",
     "Xamarin.Forms": "2.3.4.224"
   },

@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.Azure.Mobile;
 
 namespace CoolBreeze.Droid
 {
@@ -20,6 +21,8 @@ namespace CoolBreeze.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            MobileCenter.Configure("c1123794-c768-47ff-b249-946c1499033d");
             LoadApplication(new App());
         }
     }
